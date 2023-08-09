@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock title %} Web Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: blueviolet;
+
+        }
+        ul,li,a{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 7px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contect">Contect</a></li>
+        </ul>
+    </nav>
+{% block body %}{% endblock body %}
+</body>
+</html>
+</body>
+</html>
